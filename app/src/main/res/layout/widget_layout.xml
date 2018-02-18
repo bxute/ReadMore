@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:gravity="center_vertical"
+        android:id="@+id/header"
+        android:padding="14dp"
+        android:textColor="@color/white"
+        android:text="@string/favorite_book"
+        android:textSize="20sp"
+        android:background="#3d3d3d"
+        android:layout_width="match_parent"
+        android:layout_height="56dp" />
+
+    <ImageView
+        android:layout_below="@+id/header"
+        android:src="@drawable/book"
+        android:id="@+id/cover_art"
+        android:padding="8dp"
+        android:layout_width="128dp"
+        android:layout_height="169dp" />
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:textColor="#3e3e3e"
+        android:padding="4dp"
+        android:textSize="18sp"
+        android:layout_below="@+id/header"
+        android:layout_toEndOf="@+id/cover_art"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textSize="16sp"
+        android:padding="4dp"
+        android:textColor="@color/secondaryTextColor"
+        android:layout_toEndOf="@+id/cover_art"
+        android:layout_below="@+id/title"
+        android:id="@+id/auth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    tools:context="bxute.readmore.fragments.NavigationFragment">
+
+    <RelativeLayout
+        android:id="@+id/header_wrapper"
+        android:padding="24dp"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="196dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            fresco:roundAsCircle="true"
+            fresco:placeholderImage="@drawable/profile"
+            android:id="@+id/header_image"
+            android:layout_width="@dimen/profile"
+            android:layout_height="@dimen/profile" />
+
+        <TextView
+            android:textSize="16sp"
+            android:layout_alignParentBottom="true"
+            android:textColor="#ffffff"
+            android:id="@+id/user_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="?android:selectableItemBackground"
+        android:layout_marginBottom="2dp"
+        android:layout_below="@+id/header_wrapper"
+        android:id="@+id/favorites_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <TextView
+            android:textSize="24sp"
+            android:gravity="center"
+            android:text="@string/favorite_text_icon"
+            android:textColor="@color/primaryTextColor"
+            android:id="@+id/favorite_icon"
+            android:layout_width="56dp"
+            android:layout_height="56dp" />
+
+        <TextView
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:textColor="@color/primaryTextColor"
+            android:text="@string/my_favorites"
+            android:layout_toEndOf="@+id/favorite_icon"
+            android:id="@+id/favorites"
+            android:layout_width="match_parent"
+            android:layout_height="56dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="?android:selectableItemBackground"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/favorites_wrapper"
+        android:id="@+id/logout_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <TextView
+            android:textSize="24sp"
+            android:gravity="center"
+            android:text="@string/logout_text_icon"
+            android:textColor="@color/primaryTextColor"
+            android:id="@+id/logout_icon"
+            android:layout_width="56dp"
+            android:layout_height="56dp" />
+
+        <TextView
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:textColor="@color/primaryTextColor"
+            android:text="@string/logout"
+            android:layout_toEndOf="@+id/logout_icon"
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="56dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

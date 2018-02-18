@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bxute.readmore.activity.SearchActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <FrameLayout
+        android:layout_marginStart
+            ="56dp"
+        android:id="@+id/search_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <EditText
+            android:id="@+id/search_et"
+            android:textColorHint="#afffffff"
+            android:hint="@string/search_hint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/clearbtn"
+            android:padding="14dp"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:layout_gravity="end"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize" />
+
+    </FrameLayout>
+
+    <ListView
+        android:layout_below="@+id/search_view_container"
+        android:id="@+id/suggestionListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
